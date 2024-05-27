@@ -1,0 +1,112 @@
+$primary-color: #fbf7f4;
+$primary-color-nav-text: #ccaa66; 
+$primary-title-color: #515050;
+$section-padding: 100px 0;
+$mobile-section-padding: 40px 0;
+$hero-title-color: #fff;
+
+html, body
+{
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+} 
+.main-padding
+{
+	margin-top: 76px;
+}
+a:hover
+{
+	text-decoration: none;
+}
+.center
+{
+	text-align: center;
+	margin: 0 auto;
+}
+.row-centered 
+{
+    text-align:center;
+}
+.col-centered
+{
+    float: none;
+    margin: 0 auto;
+}
+.bold-custom
+{
+	font-weight: bold;
+}
+
+.section-title
+{
+	text-align: center;
+	color: $primary-title-color;
+	margin-bottom: 30px;
+	font-size: 26px;
+
+
+	@media(min-width: 768px)
+	{
+		margin-bottom: 50px;
+		font-size: 28px;
+	}
+}
+.section-divider
+{
+	background-color: $primary-color;
+}
+.center-mobile
+{
+	text-align: center;
+}
+@media(min-width: 768px)
+{
+	.center-mobile
+	{
+		text-align: left;
+	}
+}
+
+.section-padding
+{	
+	padding: $mobile-section-padding;
+
+	@media(min-width: 768px)
+	{
+		padding: $section-padding;
+	}
+}
+
+// https://codepen.io/Oddgson/pen/VPrYbv
+.divider
+{
+	position: relative;
+	// height: 1px;
+}
+
+.div-transparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-stopper:after
+{
+	content: "";
+	position: absolute;
+	z-index: 1;
+	top: -6px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 12px;
+	background-color: $primary-color;
+	border-left: 1px solid rgb(48,49,51);
+	border-right: 1px solid rgb(48,49,51);
+}

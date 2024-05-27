@@ -1,0 +1,45 @@
+.products
+{
+	.products-content
+	{
+		@media(min-width: 768px) 
+		{
+			&:nth-child(even)
+			{	
+				.row
+				{
+					> .content
+					{
+						&:nth-child(1)
+						{
+		 					order: 2;
+						}
+
+						&:nth-child(2)
+						{
+		 					order: 1;
+						}
+					}
+
+				}
+		 	}
+		}
+		&:nth-child(even)
+		{
+			background-color: rgba(204, 170, 102, 0.1);
+		}
+		.content-text
+		{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding-bottom: 30px;
+
+			h2
+			{
+				text-align: center;
+			}
+
+		}
+	}
+}

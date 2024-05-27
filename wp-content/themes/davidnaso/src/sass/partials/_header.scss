@@ -1,0 +1,127 @@
+header
+{	
+	.navbar-brand img
+	{
+		max-height: 50px;
+		overflow: hidden;
+	
+	}
+	.rotate img
+	{
+	    
+	    max-height: 30px;	
+	}
+	.bg-light
+	{
+		background-color: rgba(50,50,50, 0.6)!important;
+	}
+
+	.navbar 
+	{
+		.current_page_ancestor
+		{	
+			background: rgba(50,50,50, 0.6)!important;
+
+			.nav-link
+			{
+				padding-left: 10px;
+				font-weight: 600;
+			}
+		}
+
+		.navbar-nav
+		{
+			padding-bottom: 15px;
+
+			@include media-breakpoint-up(lg) 
+			{
+				padding-bottom: 0;
+			}
+
+			.nav-item
+			{
+				.nav-link
+				{
+					color: $primary-color-nav-text;
+					padding-left: 15px;
+					padding-right: 15px;
+				}
+
+				&:hover
+				{
+					background: rgba( $primary-color-nav-text, .6 );
+					border-radius: 2px;
+
+					a
+					{
+						color: black;
+					}
+				}
+
+				&.current-menu-item,
+				&.current-menu-parent,
+				&.current-menu-ancestor,
+				&.current-produkt-parent,
+				&.current-produkt-ancestor,
+				&.current-produktkategori-parent,
+				&.current-produktkategori-ancestor
+				{
+					> a
+					{
+						color: $primary-color-nav-text;
+						font-weight: 600;
+					}
+					> a:hover
+					{
+						color: black;
+					}
+				}
+
+				.dropdown-menu
+				{
+					margin: 0;
+					background: rgba(50,50,50, 0.8 );
+					font-size: 14px;
+					border: none;
+					border-radius: 0;
+
+					.dropdown-item
+					{
+						color: #fff;
+						border-radius: 0;
+						padding: 6px 30px;	
+
+						@media(min-width: 992px)
+						{
+							padding-left: 15px;	
+						}
+
+						&:hover
+						{
+							background: rgba(245,245,220,.6);
+							color: black;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+  
+
+// @media (min-width: 768px)
+// {
+//     .navbar-expand-sm .navbar-toggler
+//     {
+//         display: none!important;
+//     }
+// }
+// @media (min-width: 576px)
+// {
+//     .navbar-expand-sm .navbar-toggler 
+//     {
+//     display: block;
+//     }
+// }
+

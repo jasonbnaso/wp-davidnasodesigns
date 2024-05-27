@@ -1,0 +1,32 @@
+.about-us
+{	
+	.about-us-content
+	{
+		@media(min-width: 768px) 
+		{
+			&:nth-child(even)
+			{	
+				.row
+				{
+					> .content
+					{
+						&:nth-child(1)
+						{
+		 					order: 2;
+						}
+
+						&:nth-child(2)
+						{
+		 					order: 1;
+						}
+					}
+				}
+		 	}
+		}
+		&:nth-child(odd)
+		{
+			background-color: $primary-color;
+		}
+	}
+
+} 

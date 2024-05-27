@@ -1,0 +1,51 @@
+
+/*Always before bootstrap is loaded
+ $grid-float-breakpoint: $screen-sm;
+ $grid-float-breakpoint: 992px;*/
+
+// Which file is best? for these
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1590px
+);
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1560px
+);
+
+$fa-font-path: "../fonts";
+
+@import "../../bower_components/bootstrap/scss/bootstrap.scss";
+@import "../fonts/fontawesome-pro/scss/fontawesome.scss";
+@import "../fonts/fontawesome-pro/scss/brands.scss";
+@import "../fonts/fontawesome-pro/scss/solid.scss";
+@import "../fonts/fontawesome-pro/scss/regular.scss";
+@import "../fonts/fontawesome-pro/scss/v4-shims.scss";
+
+// Partials
+@import "partials/global";
+@import "partials/mixin";
+@import "partials/typography";
+@import "partials/header";
+@import "partials/hero";
+@import "partials/form";
+@import "partials/footer";
+@import "partials/loader";
+
+// Pages
+@import "home";
+@import "about-us";
+@import "contact";
+@import "portfolio";
+@import "products-template";
+
+
+
